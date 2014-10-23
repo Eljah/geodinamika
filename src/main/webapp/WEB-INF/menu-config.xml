@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConfig>
+    <Displayers>
+        <Displayer name="Velocity" type="net.sf.navigator.displayer.VelocityMenuDisplayer"/>
+    </Displayers>
+    <Menus>
+        <Menu name="Home" title="home.title" page="/home" roles="ROLE_ADMIN,ROLE_USER"/>
+        <Menu name="AdminMenu" title="menu.admin" description="Admin Menu" roles="ROLE_ADMIN" page="/admin/users">
+            <Item name="ViewUsers" title="menu.admin.users" page="/admin/users"/>
+            <Item name="ActiveUsers" title="home.activeUsers" page="/admin/activeUsers"/>
+            <Item name="ActiveUsers" title="home.activeUsers" page="/admin/activeUsers"/>
+            <Item name="ActionFromSteps" title="menu.admin.actionsteps" page="/admin/actionFromSteps"/>
+            <Item name="ActionList" title="menu.admin.actionstepslist" page="/admin/actionlist"/>
+            <Item name="FileUpload" title="menu.selectFile" page="/fileupload"/>
+        </Menu>
+        <Menu name="UserMenu" title="menu.user" description="User Menu" roles="ROLE_ADMIN,ROLE_USER" page="/userform" >
+            <Item name="EditUser" title="menu.user.users" page="/userform"/>
+            <Item name="Tasks" title="task.add.heading" page="/tasks"/>
+            <Item name="TaskList" title="menu.user.tasklist" page="/tasklist"/>
+        </Menu>
+        <Menu name="Logout" title="user.logout" page="/logout" roles="ROLE_ADMIN,ROLE_USER"/>
+    </Menus>
+</MenuConfig>

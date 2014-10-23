@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+    <persistence-unit name="ApplicationEntityManager" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>geodinamika.model.User</class>
+        <class>geodinamika.model.Role</class>
+        <class>geodinamika.model.Task</class>
+        <class>geodinamika.model.Action</class>
+        <class>geodinamika.model.steps.Step</class>
+        <class>geodinamika.model.steps.AcquireDataStep</class>
+        <class>geodinamika.model.steps.AcquireDataZetlabLoadFile</class>
+        <class>geodinamika.model.steps.AcquireDataBaikalLoadFile</class>
+        <class>geodinamika.model.steps.AcquireDataMiniseedLoadFile</class>
+        <class>geodinamika.model.steps.TransformDataStep</class>
+        <class>geodinamika.model.steps.TransformDataStepFFTForward</class>
+        <class>geodinamika.model.steps.TransformDataStepFTTInverse</class>
+        <class>geodinamika.model.steps.TransformDataStepCumulative</class>
+        <class>geodinamika.model.steps.TransformDataStepCumulativeOverlay</class>
+        <class>geodinamika.model.steps.TransformDataStepMedian</class>
+        <class>geodinamika.model.steps.TransformDataStepMarmet</class>
+    </persistence-unit>
+
+    <!-- WARNING: This file's file original source is at web/common/src/main/resources/META-INF. The
+        META-INF directory is included in the jsf, spring, struts and tapestry projects using svn:externals.
+        If you need to modify this file, please do so in web/common/src/main/resources/META-INF, check it
+        in, and then "svn up" for the other modules. -->
+</persistence>

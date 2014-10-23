@@ -1,0 +1,26 @@
+<!-- NOTE: If you're working offline, you might have to change the DOCTYPE to the following:
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">-->
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="geodinamika.model.User"/>
+        <mapping class="geodinamika.model.Role"/>
+        <mapping class="geodinamika.model.Task"/>
+        <mapping class="geodinamika.model.Action"/>
+        <mapping class="geodinamika.model.steps.Step"/>
+        <mapping class="geodinamika.model.steps.AcquireDataStep"/>
+        <mapping class="geodinamika.model.steps.AcquireDataZetlabLoadFile"/>
+        <mapping class="geodinamika.model.steps.AcquireDataBaikalLoadFile"/>
+        <mapping class="geodinamika.model.steps.AcquireDataMiniseedLoadFile"/>
+        <mapping class="geodinamika.model.steps.TransformDataStep"/>
+        <mapping class="geodinamika.model.steps.TransformDataStepFFTForward"/>
+        <mapping class="geodinamika.model.steps.TransformDataStepFTTInverse"/>
+        <mapping class="geodinamika.model.steps.TransformDataStepCumulative"/>
+        <mapping class="geodinamika.model.steps.TransformDataStepCumulativeOverlay"/>
+        <mapping class="geodinamika.model.steps.TransformDataStepMedian"/>
+        <mapping class="geodinamika.model.steps.TransformDataStepMarmet"/>
+    </session-factory>
+</hibernate-configuration>
